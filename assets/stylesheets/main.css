@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'VCR OSD Mono';
+  font-display: swap;
+  src: url('../fonts/VCR_OSD_MONO_1.001.ttf')
+}
+
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Abel Regular'),
+       local('Abel-Regular'),
+       url(https://fonts.gstatic.com/s/abel/v8/MwQ5bhbm2POE2V9BPbh5uGM.woff2) format('woff2');
+  
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: url('../images/back.jpg');
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.picture {
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid #31698c;
+ 
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial,'VCR OSD Mono', sans-serif;
+  font-size: 40px;
+  color: #f7f7f7;
+  text-shadow: 3px 2px 	#00FFFF;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Abel, sans-serif;
+  font-size: 20px;
+  color: #f7f7f7;
+  text-align: center;
+
+}
+
+.highlight {
+  color: 	#40E0D0;
+}
+.shiny {
+  color: 	#40E0D0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Abel, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.social {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  font-size: 50px;
+  justify-content: space-evenly;
+}
+.topic{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Abel, sans-serif;
+  font-size: 25px;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+.social__icon {
+  color: #f7f7f7;
+}
+
+.social__icon:hover {
+  color: #008080;
+}
+
+
+@media only screen and (max-device-width: 500px){
+  body {
+    background: url('../images/back.jpg')  #162fd1;
+  }
+
+  .picture {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 180px;
+  }
+
+  .title {
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    max-width: 50%;
+  }
+  .eduacation {
+    max-width: 50%;
+  }
+  .skills{
+    max-width: 50%;
+  }
+
+
+  .social {
+    margin-top: 30px;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  body {
+    background: url('../images/back.jpg')  #162fd1;
+  }
+
+  .picture {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .title {
+    font-size: 90px;
+    margin-bottom: 50px;
+  }
+
+  .social {
+    margin-top: 50px;
+  }
+}
